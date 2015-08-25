@@ -30,7 +30,7 @@ class Device < ActiveRecord::Base
       if task.isOn?
         doOn
         end_time = task.stop_time
-      elsif task.isOff? and time_now > end_time
+      else # task.isOff? and time_now > end_time
         doOff
       end
       self.save!

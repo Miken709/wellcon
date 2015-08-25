@@ -60,6 +60,6 @@ gem 'momentjs-rails'
 # DateTimePicker
 gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
 
-gem 'whenever', :require => false
+# gem 'whenever', :require => false
 
 end

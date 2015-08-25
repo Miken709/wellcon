@@ -14,7 +14,9 @@ class Task < ActiveRecord::Base
   end
 
   def isOff?
-    time_now < start_time and time_now > stop_time
+    time_now = DateTime.now
+  #time_now < start_time and 
+    time_now > stop_time
   end
 
 end
